@@ -1,31 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Unip - unidade de brasilia</title>
+<!-- saved from url=(0097)https://aluno.ead.unip.br/Lyceum/Api/aluno/92575DA6FAB0F15BAFC54D4336171EF1/AutenticarCarteirinha -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    
 </head>
-<body>
-    <header class="row">
-        <div class="col-2 d-flex justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-arrow-left" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/> </svg>
-        </div>
-        <div class="col-10 d-flex justify-content-center">
-            <img src="assets/img/unip-logo.png" alt="">
-        </div>
-    </header>
-    <section class="container">
-        <h1>Carteirinha virtual</h1>
-        <div class="pdf">
-            <iframe src="assets/img/2023.pdf" style="width:350px; height:350px;" frameborder="0"></iframe>
+<body class="vsc-initialized" cz-shortcut-listen="true">
+    <div style="display: none !important"><matricula>1729113</matricula></div>
+    <div style="margin-left:2%; margin-right:2%; margin-top:2%; color:#00008b;font-family:Verdana;font-size: 30Px;">
+        <img src="https://www.unip.br/assets/img/logo/logo-unip-2021.svg">
+        <table width="100%" border="0" cellspacing="0" cellpadding="1">
+            <tbody>
+                <tr>
+                    <td colspan="2" align="center">
+                        <b><font face="Arial">Dados do Aluno</font></b>
+                        <font face="Arial"></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr noshade="" color="blue" size="1"></td>
+                </tr>
+                <tr>
+                    <td style="width:330px;"><b>Matrícula:</b></td>
+                    <td style="text-transform: uppercase;">1729113</td>
+                </tr>
+                <tr>
+                    <td style="width:180px;"><b>Nome:</b></td>
+                    <td style="text-transform: uppercase;">JOÃO DIVINO DA SILVA</td>
+                </tr>
+                <tr>
+                    <td style="width:180px;"><b>RG:</b></td>
+                    <td style="text-transform: uppercase;">6017544</td>
+                </tr>
+                <tr>
+                    <td style="width:180px;"><b>Nascimento:</b></td>
+                    <td style="text-transform: uppercase;">22/09/1996</td>
+                </tr>
+                <tr>
+                    <td style="width:180px;"><b>Curso:</b></td>
+                    <td style="text-transform: uppercase;">57501 - SUP TEC EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</td>
+                </tr>
+                <tr>
+                    <td style="width:180px;"><b>Unidade:</b></td>
+                    <td style="text-transform: uppercase;">9818 - VALPARAÍSO DE GOIÁS</td>
+                </tr>
+                <tr>
+                    <td style="width:180px;"><b>Carteirinha:</b></td>
+                    <td style="text-transform: uppercase;">Desbloqueada</td>
+                </tr>
+                <tr>
+                    <td style="width:30px;"><b>Validade:</b></td>
+                    <td style="text-transform: uppercase;">Dentro do prazo de validade</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr noshade="" color="blue" size="1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:18px;" id="current-date"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        </div>
-    </section>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-</html>
+    <script>
+        // Seleciona o elemento com o ID "current-date"
+        const currentDateElement = document.getElementById('current-date');
+
+        // Obtém a data atual
+        const today = new Date();
+
+        // Formata a data no formato "dd/mm/yyyy"
+        const formattedDate = today.toLocaleDateString('pt-BR');
+
+        // Insere a data formatada no elemento
+        currentDateElement.textContent = `Data: ${formattedDate}`;
+    </script>
+</body></html>
