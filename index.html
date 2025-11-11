@@ -1,77 +1,92 @@
 <!DOCTYPE html>
 <!-- saved from url=(0097)https://aluno.ead.unip.br/Lyceum/Api/aluno/92575DA6FAB0F15BAFC54D4336171EF1/AutenticarCarteirinha -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title></title>
-    
-</head>
-<body class="vsc-initialized" cz-shortcut-listen="true">
+  </head>
+  <body class="vsc-initialized" cz-shortcut-listen="true">
     <div style="display: none !important"><matricula>1729113</matricula></div>
-    <div style="margin-left:2%; margin-right:2%; margin-top:2%; color:#00008b;font-family:Verdana;font-size: 30Px;">
-        <img src="https://www.unip.br/assets/img/logo/logo-unip-2021.svg">
-        <table width="100%" border="0" cellspacing="0" cellpadding="1">
-            <tbody>
-                <tr>
-                    <td colspan="2" align="center">
-                        <b><font face="Arial">Dados do Aluno</font></b>
-                        <font face="Arial"></font>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><hr noshade="" color="blue" size="1"></td>
-                </tr>
-                <tr>
-                    <td style="width:330px;"><b>Matrícula:</b></td>
-                    <td style="text-transform: uppercase;">1729113</td>
-                </tr>
-                <tr>
-                    <td style="width:180px;"><b>Nome:</b></td>
-                    <td style="text-transform: uppercase;">JOÃO DIVINO DA SILVA</td>
-                </tr>
-                <tr>
-                    <td style="width:180px;"><b>RG:</b></td>
-                    <td style="text-transform: uppercase;">6017544</td>
-                </tr>
-                <tr>
-                    <td style="width:180px;"><b>Nascimento:</b></td>
-                    <td style="text-transform: uppercase;">22/09/1996</td>
-                </tr>
-                <tr>
-                    <td style="width:180px;"><b>Curso:</b></td>
-                    <td style="text-transform: uppercase;">57501 - SUP TEC EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</td>
-                </tr>
-                <tr>
-                    <td style="width:180px;"><b>Unidade:</b></td>
-                    <td style="text-transform: uppercase;">9818 - VALPARAÍSO DE GOIÁS</td>
-                </tr>
-                <tr>
-                    <td style="width:180px;"><b>Carteirinha:</b></td>
-                    <td style="text-transform: uppercase;">78G-AM4F6</td>
-                </tr>
-                <tr>
-                    <td style="width:30px;"><b>Validade:</b></td>
-                    <td style="text-transform: uppercase;">Jun/2025</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><hr noshade="" color="blue" size="1"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="font-size:18px;" id="current-date"></td>
-                </tr>
-            </tbody>
-        </table>
+    <div
+      style="
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        color: #00008b;
+        font-family: Verdana;
+        font-size: 30px;
+      "
+    >
+      <img src="https://www.unip.br/assets/img/logo/logo-unip-2021.svg" />
+      <table width="100%" border="0" cellspacing="0" cellpadding="1">
+        <tbody>
+          <tr>
+            <td colspan="2" align="center">
+              <b><font face="Arial">Dados do Aluno</font></b>
+              <font face="Arial"></font>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr noshade="" color="blue" size="1" /></td>
+          </tr>
+          <tr>
+            <td style="width: 330px"><b>Matrícula:</b></td>
+            <td style="text-transform: uppercase">1729113</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Nome:</b></td>
+            <td style="text-transform: uppercase">JOÃO DIVINO DA SILVA</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>RG:</b></td>
+            <td style="text-transform: uppercase">6017544</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Nascimento:</b></td>
+            <td style="text-transform: uppercase">22/09/1996</td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Curso:</b></td>
+            <td style="text-transform: uppercase">
+              57501 - SUP TEC EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Unidade:</b></td>
+            <td style="text-transform: uppercase">
+              9818 - VALPARAÍSO DE GOIÁS
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 180px"><b>Carteirinha:</b></td>
+            <td style="text-transform: uppercase">78G-AM4F6</td>
+          </tr>
+          <tr>
+            <td style="width: 30px"><b>Validade:</b></td>
+            <td style="text-transform: uppercase">Dez/2025</td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr noshade="" color="blue" size="1" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 18px" id="current-date"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script>
-        // Seleciona o elemento com o ID "current-date"
-        const currentDateElement = document.getElementById('current-date');
+      // Seleciona o elemento com o ID "current-date"
+      const currentDateElement = document.getElementById("current-date");
 
-        // Obtém a data atual
-        const today = new Date();
+      // Obtém a data atual
+      const today = new Date();
 
-        // Formata a data no formato "dd/mm/yyyy"
-        const formattedDate = today.toLocaleDateString('pt-BR');
+      // Formata a data no formato "dd/mm/yyyy"
+      const formattedDate = today.toLocaleDateString("pt-BR");
 
-        // Insere a data formatada no elemento
-        currentDateElement.textContent = `Data: ${formattedDate}`;
+      // Insere a data formatada no elemento
+      currentDateElement.textContent = `Data: ${formattedDate}`;
     </script>
-</body></html>
+  </body>
+</html>
